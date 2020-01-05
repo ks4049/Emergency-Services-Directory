@@ -1,0 +1,87 @@
+.tablesorter-blue .header, .tablesorter-blue .tablesorter-header {
+  background-color: #89afd0;
+}
+#results-table a{
+  text-decoration: none;
+}
+.modal-title {
+  float: left;
+  padding-left: 1%;
+}
+.close{
+  float: right;
+}
+.ui-tabs .ui-tabs-nav {
+  width: fit-content;
+  margin: 0 auto;    
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+  padding: 0.5em 1.5em;
+}    
+.form-control {
+  width: 35%;
+}    
+.form-group p{      
+  font-weight: bold;      
+}  
+.tablesorter-blue td{
+  background-color: #eee;
+  color: #333;
+}    
+body{
+  margin: 2%;
+  font-family:Tahoma;      
+  background-color: #F5E5E5;      
+}    
+#search-form, #recent-search{
+    border: 1px solid black;
+    padding: 2%;
+  }
+h4{
+  font-style: italic;
+  font-weight: bolder;
+}
+h2{
+  color: red;
+  font-family: 'Satisfy', cursive;
+  font-size: 40px;
+  font-weight: bolder;
+} 
+.btn-secondary{
+  background-color: #4c4848;
+  color: white;
+  font-weight: bold;            
+}
+.btn.focus, .btn:focus, .btn:hover{
+  color: #ecd4d4;
+  text-decoration: none;
+}   
+.ui-tabs .ui-tabs-panel, .ui-widget-header{
+  background-color: #ccc;
+  border:none;
+}    
+.modal-body>div{
+  height: calc(100vh - 210px);
+  overflow-y: scroll;      
+}
+.locInfo{
+  width: 40%;      
+}
+.map{
+  height: 400px;
+  width: 60%;
+}
+#recent-search{
+  font-family: 'Tahoma';
+  font-size: 15px;
+}
+#recent-search .table>thead>tr>th{
+  border-bottom-color: rgb(85, 85, 85);
+}
+#recent-search .table>tbody>tr>td, #recent-search .table>tbody>tr>th {
+    border-top-color: rgb(246, 229, 230);
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  border-top: none;
+  border-bottom: none;
+}

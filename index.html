@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Emergency Services</title>  
+  <link rel="stylesheet" href="css/theme.blue.min.css"/>
+  <link rel="stylesheet" href="css/jquery-ui.css"/>  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>  
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/zmd.hierarchical-display.min.css">
+  <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16"/>
+  
+  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>  
+  <script src="js/jquery.zmd.hierarchical-display.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/jquery.tablesorter.js"></script>
+  <script src="js/jquery-ui.js"> </script>  
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBthCgCKzwZGlNTIIFSYqahblH0n6aMgNw"></script>
+</head>
+<body onload="myAPP.init();">      
+  <div id="group">
+    <h2>Emergency Services Directory</h2>  
+    <div class="animation">  
+      <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#search-form" aria-expanded="false" aria-controls="search-form">
+        Show Search Criteria
+      </button>
+      <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#recent-search" aria-expanded="false" aria-controls="collapseExample">
+        Recently viewed
+      </button>
+    </div>
+    <p></p>
+    <div class="accordion-group animation">
+      <form id="search-form" class="collapse indent">  
+          <h3>Search Criteria</h3>
+          <div class="form-group">
+            <label for="orgType">Organization Type</label>
+            <select name="type" id="orgType" class="form-control form-control-sm"></select>
+          </div>
+          <div class="form-group">      
+            <label for="orgName">Organization Name</label>
+            <input id="orgName" name="name" type="text" class="form-control form-control-sm"> 
+            <em style="color: rgb(104, 129, 162);">*can be partial - "vol" for "Volunteer"</em>
+          </div>
+          <div class="form-group">
+            <label for="orgName">State</label>
+            <select id="state" name="state" class="form-control form-control-sm"></select>      
+          </div>      
+          <div class="form-group">
+            <label for="county">County</label>
+            <input id="county" name="county" type="text" class="form-control form-control-sm">
+          </div>
+          <div class="form-group">
+            <label for="zip">ZIP Code</label>
+            <input id="zip" name="zip" type="text" class="form-control form-control-sm"></p>
+          </div>
+          <div style="margin:0 0 0 7%" class="form-group">
+            <input value="Show Results" id="btnSearch" class="btn btn-secondary" type="button" class="form-control form-control-sm"> 
+            <input type="reset" class="btn btn-secondary" value="Reset Form" class="form-control form-control-sm">
+          </div>    
+      </form>
+      <div id="recent-search" class="collapse indent"></div>
+    </div>
+    
+    <div id="tableOutput"></div>
+    <div class="modalContent"></div>
+  </div>
+  <script type="text/javascript" src="js/myPlugin.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
